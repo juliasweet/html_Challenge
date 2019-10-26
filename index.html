@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Julia Sweet's Climate Analysis: Humidity</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Climate Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto flex-row">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html">Temperature vs. Latitude</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity vs. Latitude</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness vs. Latitude</a>
+                        <a class="dropdown-item" href='windspeed.html'>Wind Speed vs. Latitude</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="datapage.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <h1 style="color:steelblue">Julia Sweet's Climate Analysis</h1>
+                <p><img src="LatitudevsTemperature.png" alt="Plot of latitude vs temperature" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+                    <td align=top> Welcome to my Weather Py pages. Weather Py was the homework assignment for the API Unit of the Data Visualization and Analysis Bootcamp hosted at University of Minnesota, St. Paul. For this assignment, we used several Python libraries,
+                        including Pandas, Matplotlib, and Numpy. We also used the OpenWeather API and CitiPy. The data was gathered by first generating 1500 random latitude-longitude pairs, then using CitiPy to find the nearest city. CitiPy limits its
+                        results to cities with at least 500 people. Then, the cities were fed into the OpenWeather API. If the city had a weather station, the following data points were gathered: temperature, humidity, wind speed, and cloudiness. As the
+                        query was run on July 11th, 2019, the data reflect measurements for that date.
+                    </td>
+                </p>
+                <p> The assignment called for four comparisons to be made and plotted. Each of the analyses compared one weather-related metric with a city's latitude. We were to try to draw conclusions about weather patterns as they pertained to latitude.
+                    Specifically, we looked at the relationships between latitude and temperature, wind speed, humidity, and cloudiness. You can navigate to any visualization, accompanied by my analysis, by clicking on the thumbnail of the visualization
+                    or by selecing the comparison from the drop-down menu above. If you are interested in viewing my source code, visit my github repository for the project.
+                </p>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <h3 style="color:steelblue">Visualizations</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a href="temperature.html"><img src="LatitudevsTemperature.png" alt="Link to Latitude vs. Temperature" width=175px height=135px class="rounded-0">
+                        </a>
+                    </div>
+                    <div class=" col-xs-6 col-sm-6 col-md-6">
+                        <a href="humidity.html"><img src="LatitudevsHumidity.png" alt="Link to Latitude vs. Humidity" width=175px height=135px class="rounded-0"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a href="cloudiness.html"><img src="LatitudevsCloudiness.png" alt="Link to Latitude vs. Cloudiness" width=175px height=135px class="rounded-0"></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a href="windspeed.html"><img src="LatitudevsWindSpeed.png" alt="Link to Latitude vs. Wind Speed" width=175px height=135px class="rounded-0"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=footer>
+            <p>Copyright 2019 by Julia Sweet</p>
+        </div>
+</body>
